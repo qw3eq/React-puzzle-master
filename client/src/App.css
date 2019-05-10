@@ -1,0 +1,51 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.game {
+  width: 30%;
+  height: auto;
+  margin: 5% 5% 0.5% 5%;
+}
+
+.quadTile {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+}
+
+.singleTile {
+  border: 0.5px solid black;
+  position: relative;
+  width: 100%;
+}
+
+.singleTile:before {
+  content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.selected {
+  border: 5px solid purple;
+}
+
+.blue {
+    background-color: #4286f4;
+}
+
+.red {
+    background-color: #f4416e;
+}
+
+.buttons {
+    margin-left: 3.8%;
+}
+
+button {
+    width: 100px;
+    height: 75px;
+    margin: 5px;
+
+}
